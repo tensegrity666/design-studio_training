@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Студия дизайна NЁRDS</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
@@ -37,7 +39,12 @@
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                        <input class="visually-hidden filter-input filter-input-range" min="0" max="20000" step="500" type="range" name="cost">
+                        <input class="visually-hidden filter-input filter-input-range" type="range" min="0" max="20000" step="500"  name="cost" id="filter-cost">
+                        <label class="" for="cost-min">От</label>
+                        <input class="filter-input filter-input-cost" type="text" name="cost-min" value="0" placeholder="0"  id="cost-min">
+                        <label class="" for="cost-max">До</label>
+                        <input class="filter-input filter-input-cost" type="text" name="cost-min" value="0" placeholder="0"  id="cost-max">
+                        <label class="visually-hidden" for="filter-cost">Стоимость</label>
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
@@ -81,7 +88,7 @@
                             </li>
                         </ul>
                 </fieldset>
-        <button class="filter-button button" type="submit">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
         </form>
         </section>
         <section class="catalog">
@@ -93,7 +100,7 @@
                         <h3 class="description-item">Sedona</h3>
                         <p>Информационный сайт<br>
                             для туристов</p>
-                        <a href="#" class="button">9900Р</a>
+                        <a href="#" class="button button-pink">9900Р</a>
                     </section>
                 </li>
                 <li class="catalog-item">
@@ -102,7 +109,7 @@
                         <h3 class="description-item">Pink</h3>
                         <p>Продуктовый лендинг<br>
                             приложения для iOS и Android</p>
-                        <a href="#" class="button">9900Р</a>
+                        <a href="#" class="button button-pink">9900Р</a>
                     </section>
                 </li>
                 <li class="catalog-item">
@@ -111,7 +118,7 @@
                         <h3 class="description-item">Borodinsky</h3>
                         <p>Сайт салоны красоты.<br>
                             Для мужчин, да.</p>
-                        <a href="#" class="button">9900Р</a>
+                        <a href="#" class="button button-pink">9900Р</a>
                     </section>
                 </li>
                 <li class="catalog-item">
@@ -120,7 +127,7 @@
                         <h3 class="description-item">Mishka</h3>
                         <p>Интернет-магазин<br>
                            вязаных игрушек</p>
-                        <a href="#" class="button">9900Р</a>
+                        <a href="#" class="button button-pink">9900Р</a>
                     </section>
                 </li>
                 <li class="catalog-item">
@@ -138,13 +145,13 @@
                         <h3 class="description-item">Kvast</h3>
                         <p>Промо-сайт производителя<br>
                            крафтового кваса</p>
-                        <a href="#" class="button">9900Р</a>
+                        <a href="#" class="button button-pink">9900Р</a>
                     </section>
                 </li>
             </ul>
 
             <ul class="pagination-list">
-                <li class="pagination-item"><a>1</a></li>
+                <li><span class="pagination-item-current"><a>1</a></span></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#" class="button">Следующая</a></li>
@@ -152,25 +159,30 @@
         </section>
 
     </main>
-    <footer>
+     <footer>
         <section class="footer-contacts">
             <h2 class="visually-hidden">Наши контакты</h2>
             <p>NЁRDS DESIGN STUDIO</p>
             191186, Воронеж,<br>
             ул. Лизюкова, д. 19/8
             <p>тел. +7 (645) 275-75-75</p>
-            <div class="footer">
+            <a class="button button-pink" href="#">Напишите нам</a>
+        </section>
+        <div class="footer-map">
+            <img src="img/map.jpg" alt="город Воронеж, ул. Лизюкова, д. 19/8">
+        </div>
+        <div class="footer-under">
                 <b>Давайте дружить, это выгодно!</b>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
+        </div>
+        <div class="footer-social">
             <ul>
                 <li><a href="#" class="social-button"><img src="img/icons/vk-icon.svg" alt="Вконтакте">Вконтакте</a></li>
                 <li><a href="#" class="social-button"><img src="img/icons/fb-icon.svg" alt="Facebook">Facebook</a></li>
                 <li><a href="#" class="social-button"><img src="img/icons/insta-icon.svg" alt="Instagram">Instagram</a></li>
             </ul>
-        </section>
+        </div>
     </footer>
-
     <!-- модальное окно -->
     <section class="write">
         <h2>Напишите нам</h2>
