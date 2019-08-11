@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Студия дизайна NЁRDS</title>
-<!--  <link rel="stylesheet" href="styles/normalize.css">-->
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-   
-    <header class="main-header">
+  <header class="main-header">
         
-      <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип NЁRDS" width="160" height="65">
+    <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип NЁRDS" width="160" height="65">
        
-      <nav class="main-navigation">
+    <nav class="main-navigation">
         <ul class="main-navigation-items">
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
@@ -25,43 +24,50 @@
       <ul class="basket">
          <li><a href="#">Корзина</a></li>       
       </ul>
-      
     </header>
-    <main class="container">
+    
+    <main>
         <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
         
         <section class="slider">
             <h2 class="visually-hidden">Наши принципы</h2>
             <ul>
-                <li class="slider-item">
-                    <h3>Долго, дорого, скрупулезно</h3>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <p><a href="#" class="button button-pink">Узнать больше</a></p>
+                <li class="slider-item item-expensive">
+                    <div class="item-wrapper">
+                      <h3>Долго, дорого, скрупулезно</h3>
+                      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                      <a href="#" class="button button-pink">Узнать больше</a>
+                    </div>
                     <img src="img/slide1.png" alt="Иллюстрация с тремя смартфонами">
                 </li>
-                <li class="slider-item">
+                <li class="slider-item item-math">
+                  <div class="item-wrapper">
                     <h3>Любим математику как никто другой</h3>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                     <p><a href="#" class="button button-pink">Узнать больше</a></p>
+                  </div>
                     <img src="img/slide2.png" alt="Иллюстрация с двумя мониторами">
                 </li>
-                <li class="slider-item">
+                <li class="slider-item item-night">
+                  <div class="item-wrapper">
                     <h3>Только ночь, только хардкор</h3>
                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <p><a href="#" class="button button-pink">Узнать больше</a></p>
+                  </div>
                     <img src="img/slide3.jpg" alt="Иллюстрация с планшетом и смартфоном">
                 </li>
             </ul>
-        <div class="slides">
-            <ul class="slides-switcher">
+            
+        <div class="slider-switcher">
+            <ul>
                 <li>
-                    <button class="button-slide" type="button" name="slide-1">Долго, дорого, скрупулезно</button>
+                    <button class="button-slide" type="button" name="slide-1">1<span class="visually-hidden">Долго, дорого, скрупулезно</span></button>
                 </li>
                 <li>
-                    <button class="button-slide" type="button" name="slide-2">Любим математику как никто другой</button>
+                    <button class="button-slide" type="button" name="slide-2">2<span class="visually-hidden">Любим математику как никто другой</span></button>
                 </li>
                 <li>
-                    <button class="button-slide" type="button" name="slide-3">Только ночь, только хардкор</button>
+                    <button class="button-slide" type="button" name="slide-3">3<span class="visually-hidden">Только ночь, только хардкор</span></button>
                 </li>
             </ul>
         </div>
@@ -87,6 +93,8 @@
                 </li>
             </ul>
         </section>
+        
+      <div class="information-wrapper">
         <section class="about">
             <h2>Мы — маленькая, но гордая дизайн-студия из Воронежа.</h2>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -96,8 +104,8 @@
                     <li>Мобильных приложений для iOS и Android</li>
                     <li>Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
-
         </section>
+        
         <section class="statistics">
             <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип компании">
             <h2>с 2004 года любим точность во всем:</h2>
@@ -109,8 +117,9 @@
                     <li><b>50<span class="percents-sign">%</span></b>
                         <p>Минимальная предоплата</p></li>
                 </ul>
-
         </section>
+      </div>
+       
         <section class="projects">
             <h2 class="visually-hidden">Наши проекты</h2>
             <ul>
@@ -120,30 +129,36 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <section class="footer-contacts">
-            <h2 class="visually-hidden">Наши контакты</h2>
-            <p>NЁRDS DESIGN STUDIO</p>
-            191186, Воронеж,<br>
-            ул. Лизюкова, д. 19/8
-            <p>тел. +7 (645) 275-75-75</p>
-            <a class="button button-pink" href="#">Напишите нам</a>
-        </section>
-        <div class="footer-map">
+        
+        <section class="map">
             <img src="img/map.jpg" alt="город Воронеж, ул. Лизюкова, д. 19/8">
-        </div>
-        <div class="footer-under">
-                <b>Давайте дружить, это выгодно!</b>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        <div class="footer-social">
+        </section>
+        
+        <section class="contacts">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <div class="contacts-wrapper">
+              <p>NЁRDS DESIGN STUDIO</p>
+              191186, Воронеж,<br>
+              ул. Лизюкова, д. 19/8
+              <b>тел. +7 (645) 275-75-75</b>
+              <a class="button button-pink" href="#">Напишите нам</a>
+            </div>
+        </section>
+        
+        <footer class="main-footer">
+          <div class="footer-social">
             <ul>
-                <li><a href="#" class="social-button"><img src="img/icons/vk-icon.svg" alt="Вконтакте">Вконтакте</a></li>
-                <li><a href="#" class="social-button"><img src="img/icons/fb-icon.svg" alt="Facebook">Facebook</a></li>
-                <li><a href="#" class="social-button"><img src="img/icons/insta-icon.svg" alt="Instagram">Instagram</a></li>
+                <li><a href="#" class="social-button">Вконтакте</a></li>
+                <li><a href="#" class="social-button">Facebook</a></li>
+                <li><a href="#" class="social-button">Instagram</a></li>
             </ul>
-        </div>
-    </footer>
+          </div>
+          <div class="discount">
+            <b>Давайте дружить, это выгодно!</b>
+            <i>Скидка 10% для друзей из социальных сетей.</i>
+          </div>
+        </footer>
+        
 </body>
 
 </html>
