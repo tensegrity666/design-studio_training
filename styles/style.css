@@ -1,16 +1,16 @@
 html,
 body {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #283136;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .visually-hidden:not(focus):not(active),
@@ -47,13 +47,13 @@ input[type="radio"].visually-hidden {
   align-items: flex-end;
   margin: 0 auto;
   padding: 0 140px;
-  
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
-    text-transform: uppercase;
 
-    background-color: #eee;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eee;
 }
 
 .main-navigation {
@@ -66,7 +66,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
+
   margin: 10px;
   padding: 0;
 
@@ -75,7 +75,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-items a {
   padding: 20px;
-  
+
   color: #000;
   text-decoration: none;
 }
@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 
 .basket a {
   padding: 0;
-  
+
   color: #000;
   text-decoration: none;
 }
@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 80px;
   padding: 20px 140px;
-  
+
   color: #000;
   background-color: #eee;
 }
@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
 .item-wrapper p {
   margin: 0;
   margin-bottom: 30px;
-  
+
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -161,7 +161,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
+
   list-style: none;
 }
 
@@ -172,7 +172,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 120px;
   padding: 0 140px;
-  
+
   list-style: none;
 }
 
@@ -196,15 +196,100 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin: 0 140px;
+  margin-bottom: 70px;
+  padding: 0;
+  padding-top: 70px;
+  
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.projects ul {
+.about {
+  flex-basis: 650px;
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  
+  font-family: "roboto medium", sans-serif;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: normal;
+}
+
+.principes {
+  margin: 0;
+  margin-bottom: 35px;
+} 
+
+.research {
+  margin: 0;
+  margin-bottom: 25px;
+  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about ul li {
+  padding: 0 0 25px 15px;
+}
+
+.about ul li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  
+  top: -3px;
+  left: -15px;
+  width: 30px;
+  height: 2px;
+  
+  background-color: #fb565a;
+}
+
+.statistics {
   display: flex;
-  justify-content: space-around;
+  flex-flow: column wrap;
+  flex-basis: 370px;
+}
+
+.statistics ul {
+  display: flex;
   margin: 0;
   padding: 0;
   
   list-style: none;
+}
+
+.projects {
+  margin-bottom: 85px;
+}
+
+.projects ul {
+  display: flex;
+  flex-basis: 1160px;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 140px;
+  padding: 45px 0;
+
+  list-style: none;
+  
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.projects ul li{
+  margin: 35px;
 }
 
 .contacts {
@@ -215,13 +300,13 @@ input[type="radio"].visually-hidden {
   position: absolute;
   display: flex;
   flex-flow: column nowrap;
-  
+
   width: 350px;
   height: 300px;
-  
+
   bottom: 400px;
   left: 140px;
-  
+
   background-color: #fff;
 }
 
@@ -235,6 +320,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
 }
