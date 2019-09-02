@@ -1,6 +1,6 @@
 html,
 body {
-  width: 1440px;
+  min-width: 1440px;
   margin: 0 auto;
   padding: 0;
 
@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   margin: 0 auto;
   padding: 0 140px;
@@ -60,13 +60,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 500px;
+  
 }
 
 .main-navigation-items {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-
+  justify-content: space-between;
   margin: 10px;
   padding: 0;
 
@@ -114,14 +114,15 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  flex-basis: 390px;
+  flex-basis: 600px;
+  padding-right: 60px;
 }
 
 .item-wrapper h3 {
@@ -165,24 +166,28 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.services {
+  display: flex;
+  justify-content: center;
+}
+
 .services-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-basis: 1920px;
   justify-content: space-between;
-  margin: 0;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin: 0 140px;
   margin-bottom: 120px;
-  padding: 0 140px;
+  padding: 0;
 
   list-style: none;
 }
 
 .service-item {
   display: flex;
+  width: 300px;
   flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-basis: 300px;
-  padding-right: 100px;
 }
 
 .service-item h3,
@@ -195,17 +200,17 @@ input[type="radio"].visually-hidden {
 .information-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 140px;
   margin-bottom: 70px;
-  padding: 0;
   padding-top: 70px;
   
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .about {
-  flex-basis: 650px;
+  flex-basis: 770px;
+  margin-right: 140px;
 }
 
 .about h2 {
@@ -269,32 +274,70 @@ input[type="radio"].visually-hidden {
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
+  
+  margin: 0 140px;
   margin-bottom: 85px;
+  padding: 45px 0;
+  
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  
 }
 
 .projects ul {
   display: flex;
-  flex-basis: 1160px;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: space-around;
+  flex-basis: 1920px;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 140px;
-  padding: 45px 0;
-
-  list-style: none;
-  
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-.projects ul li{
-  margin: 35px;
-}
-
-.contacts {
   position: relative;
+  margin: 0;
+  padding: 10px;
+  
+  list-style: none;
 }
+
+.projects-barbershop {
+  opacity: 0.4;
+}
+
+.projects-pink {
+  opacity: 0.4;
+}
+
+.projects-mishka {
+  opacity: 0.4;
+}
+
+.projects-barbershop:hover {
+  opacity: 1;
+}
+
+.projects-pink:hover  {
+  opacity: 1;
+}
+
+.projects-mishka:hover  {
+  opacity: 1;
+}
+
+.percents {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.percents-sign {
+  font-size: 35px;
+  vertical-align: sub;
+}
+
+.map img {
+  position: relative;
+  width: 100%;
+}
+
 
 .contacts-wrapper {
   position: absolute;
@@ -304,7 +347,7 @@ input[type="radio"].visually-hidden {
   width: 350px;
   height: 300px;
 
-  bottom: 400px;
+  top: 1900px;
   left: 140px;
 
   background-color: #fff;
@@ -312,6 +355,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   display: flex;
+  min-width: 1440px;
+  min-height: 300px;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
