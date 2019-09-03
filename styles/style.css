@@ -173,6 +173,7 @@ input[type="radio"].visually-hidden {
 
 .services-list {
   display: flex;
+  position: relative;
   flex-basis: 1920px;
   justify-content: space-between;
   align-items: center;
@@ -180,6 +181,7 @@ input[type="radio"].visually-hidden {
   margin: 0 140px;
   margin-bottom: 120px;
   padding: 0;
+  padding-top: 146px; 
 
   list-style: none;
 }
@@ -190,11 +192,89 @@ input[type="radio"].visually-hidden {
   flex-flow: column wrap;
 }
 
-.service-item h3,
-.service-item p,
-.service-item a {
-  margin: 0;
+.service-item h3 {
+  margin: 20px 0;
   padding: 0;
+}
+
+.service-item p {
+  margin: 0;
+  margin-bottom: 30px;
+  
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.service-item-web::before {
+  content: "";
+  position: absolute;
+  
+  top: 0;
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/illustration-1.jpg);
+}
+
+.service-item-apps::before {
+  content: "";
+  position: absolute;
+  
+  top: 0;
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/illustration-2.jpg);
+}
+
+.service-item-presentations::before {
+  content: "";
+  position: absolute;
+  
+  top: 0;
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/illustration-3.jpg);
+}
+
+.button {
+  display: block;
+  width: 160px;
+  height: 20px;
+  
+  color: #fff;
+  text-align: center;
+  vertical-align: baseline;
+  
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 0;
+  
+  background-color: #fb565a;
+  
+  border-radius: 3px;
+}
+
+.button-pink {
+  color: #fff;
+  background-color: #fb565a;
+}
+
+.button-lime {
+  color: #fff;
+  background-color: #00ca74;
+}
+
+.button-yellow {
+  color: #fff;
+  background-color: #efc84a;
+}
+
+.button-slider-about {
+  width: 240px;
+  
+  background-color: #fb565a;
 }
 
 .information-wrapper {
@@ -273,6 +353,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.statistics ul p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  
+  color: #283136;
+  
+}
+
 .projects {
   display: flex;
   justify-content: center;
@@ -323,34 +412,72 @@ input[type="radio"].visually-hidden {
 }
 
 .percents {
+  display: inline-block;
   font-size: 45px;
   line-height: 50px;
   font-weight: bold;
+  
+  margin-bottom: 15px;
 }
 
 .percents-sign {
-  font-size: 35px;
-  vertical-align: sub;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: bold;
+  vertical-align: baseline;
 }
 
+
 .map img {
-  position: relative;
   width: 100%;
 }
 
+.contacts {
+  position: relative;
+}
 
 .contacts-wrapper {
   position: absolute;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
 
-  width: 350px;
-  height: 300px;
+  width: 220px;
+  height: 210px;
+  padding: 50px;
 
-  top: 1900px;
+  top: 100px;
   left: 140px;
 
   background-color: #fff;
+}
+
+.contacts-wrapper li:first-child {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts-wrapper li {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+  
+  font-size: 16px;
+  color: #666;
+}
+
+.contacts-wrapper li a {
+  color: #666;
+  text-decoration: none;
+} 
+
+.button-contacts {
+  align-self: center;
+  width: 220px;
+  
+  background-color: #fb565a;
 }
 
 .main-footer {
