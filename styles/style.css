@@ -390,20 +390,20 @@ input[type="radio"].visually-hidden {
   
   display: inline-flex;
   justify-content: center;
-  flex-basis: 350px;
+  flex-basis: 200px;
   height: 90px;
   
-  margin: 10px;
+  margin-left: 20px;
 }
 
-.projects li:nth-last-child(n+2) a::after {
+.projects li:not(:nth-child(4n)) a::after {
   content: "";
   position: absolute;
   
   width: 2px;
   height: 54px;
   top: 15px;
-  left: 390px;
+  left: 260px;
   
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -463,8 +463,13 @@ input[type="radio"].visually-hidden {
 }
 
 
-.map img {
-  width: 100%;
+.map {
+  min-width: 1440px;
+  min-height: 416px;
+  background-image: url(../img/map.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contacts {
@@ -481,7 +486,7 @@ input[type="radio"].visually-hidden {
   height: 210px;
   padding: 50px;
 
-  top: 100px;
+  top: 40px;
   left: 140px;
 
   background-color: #fff;
@@ -518,7 +523,7 @@ input[type="radio"].visually-hidden {
 .main-footer {
   display: flex;
   min-width: 1440px;
-  min-height: 300px;
+  min-height: 220px;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
@@ -530,3 +535,4 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 }
+
