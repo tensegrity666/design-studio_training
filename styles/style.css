@@ -421,27 +421,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.projects-barbershop {
+.projects-logo {
   opacity: 0.4;
+  transition: 0.4s;
 }
 
-.projects-pink {
-  opacity: 0.4;
-}
-
-.projects-mishka {
-  opacity: 0.4;
-}
-
-.projects-barbershop:hover {
-  opacity: 1;
-}
-
-.projects-pink:hover  {
-  opacity: 1;
-}
-
-.projects-mishka:hover  {
+.projects-logo:hover  {
   opacity: 1;
 }
 
@@ -511,7 +496,12 @@ input[type="radio"].visually-hidden {
 .contacts-wrapper li a {
   color: #666;
   text-decoration: none;
+  transition: 0.4s;
 } 
+
+.contacts-wrapper li a:hover {
+  color: #000;
+}
 
 .button-contacts {
   align-self: center;
