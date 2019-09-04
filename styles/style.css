@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   margin: 0 auto;
   padding: 0 140px;
@@ -59,39 +59,54 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 500px;
-  
+  flex-basis: 800px;
+  justify-content: center;
 }
 
 .main-navigation-items {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 0;
 
   list-style: none;
 }
 
 .main-navigation-items a {
-  padding: 20px;
-
+  margin-right: 45px;
   color: #000;
   text-decoration: none;
 }
 
 .basket {
-  margin: 10px;
-  padding: 0;
-
+  text-align: end;
+  
   list-style: none;
+  position: relative;
 }
 
 .basket a {
-  padding: 0;
-
+  padding-left: 30px;
   color: #000;
   text-decoration: none;
+}
+
+.basket a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 37px;
+  left: 35px;
+  width: 15px;
+  height: 15px;
+  
+  background-image: url(../img/icons/cart-icon.svg);
+  background-repeat: no-repeat;
+  
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.basket a:hover::before {
+  opacity: 1;
 }
 
 .slider {
@@ -100,7 +115,7 @@ input[type="radio"].visually-hidden {
   flex-flow: column wrap;
   margin: 0 auto;
   margin-bottom: 80px;
-  padding: 20px 140px;
+  padding: 0 140px;
 
   color: #000;
   background-color: #eee;
@@ -114,6 +129,7 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: flex;
   flex-flow: row nowrap;
+  flex-basis: 1580px;
   justify-content: space-around;
 }
 
@@ -122,7 +138,7 @@ input[type="radio"].visually-hidden {
   flex-flow: column wrap;
   justify-content: flex-start;
   flex-basis: 600px;
-  padding-right: 60px;
+  padding-right: 100px;
 }
 
 .item-wrapper h3 {
@@ -515,14 +531,85 @@ input[type="radio"].visually-hidden {
   min-width: 1440px;
   min-height: 220px;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-social ul {
   display: flex;
+  flex-basis: 300px;
   margin: 0;
-  padding: 0;
+  padding: 0 140px;
 
   list-style: none;
 }
 
+.social-button-vk {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-image: url(../img/icons/vk-icon.png);
+}
+
+.social-button-fb {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-image: url(../img/icons/fb-icon.png);
+}
+
+.social-button-insta {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-image: url(../img/icons/insta-icon.png);
+}
+
+.discount {
+  display: flex;
+  flex-basis: 1000px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.discount b {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.discount i {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  font-style: normal;
+  color: #444;
+}
+
+.slider-switcher {
+  position: absolute;
+  bottom: 110px;
+  left: 49%
+}
+
+.button-slide {
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  
+  cursor: pointer;
+}
+
+.button-slide:active {
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  
+  transition: 0.4s;
+}
