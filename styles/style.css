@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 auto;
+  margin-bottom: 80px;
   padding: 0 140px;
 
   font-size: 16px;
@@ -93,7 +94,7 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   position: absolute;
-  top: 37px;
+  top: 10px;
   left: 35px;
   width: 15px;
   height: 15px;
@@ -113,9 +114,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  padding: 0 140px;
+  margin: 0;
 
   color: #000;
   background-color: #eee;
@@ -126,11 +125,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+
 .slider-item {
   display: flex;
   flex-flow: row nowrap;
-  flex-basis: 1580px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .item-wrapper {
@@ -166,11 +165,11 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
 }
 
-.item-night {
+.slider .item-night {
   display: none;
 }
 
-.item-math {
+.slider .item-math {
   display: none;
 }
 
@@ -612,4 +611,61 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   
   transition: 0.4s;
+}
+
+/* inner-page*/
+
+.inner-page .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin:  0 auto;
+  padding: 0 140px;
+}
+
+.filters {
+  flex-basis: 260px;
+}
+
+.right-block {
+  flex-basis: 760px;
+}
+
+.sort {
+  display: flex;
+}
+
+.catalog-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.catalog-item {
+  flex-basis: 360px;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  border: 2px solid gray;
+  
 }
