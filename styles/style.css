@@ -60,7 +60,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   line-height: 30px;
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
 
   background-color: #eee;
@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-items a {
   margin-right: 45px;
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 
 .basket a {
   padding-left: 30px;
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
@@ -125,7 +125,7 @@ input[type="radio"].visually-hidden {
   flex-flow: column wrap;
   margin: 0;
 
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   background-color: #eee;
 }
 
@@ -524,7 +524,7 @@ input[type="radio"].visually-hidden {
 } 
 
 .contacts-wrapper li a:hover {
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
 }
 
 .button-contacts {
@@ -634,7 +634,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   font-size: 55px;
   line-height: 70px;
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   
   margin-bottom: 80px;
   
@@ -765,11 +765,16 @@ input[type="radio"].visually-hidden {
 .pagination-item-current a{
   display: block;
   padding: 12px;
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
+}
+
+.pagination-item a:active,
+.pagination-item-current a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .filter fieldset {
@@ -846,7 +851,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   vertical-align: middle;
   
-  color: rgba(0, 0, 0, 1);;
+  color: rgba(0, 0, 0, 1);
   
   border: none;
   
