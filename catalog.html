@@ -207,24 +207,26 @@
 
     <!-- модальное окно -->
     <section class="write">
-        <h2>Напишите нам</h2>
-            <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-                <ul>
-                    <li>
-                        <label for="write-name">Ваше имя:</label>
-                        <input type="text" name="name" id="write-name" placeholder="Иван Иванов">
-                    </li>
-                    <li>
-                        <label for="write-email">Ваш e-mail:</label>
-                        <input type="email" name="email" id="write-email" placeholder="example@email.com">
-                    </li>
-                    <li>
-                        <label for="write-message">Текст письма:</label>
-                        <input type="text" name="message" id="write-message" placeholder="В свободной форме">
-                    </li>
-                </ul>
-            <button class="button" type="submit">Отправить</button>
-            </form>
+        <h2 class="form-title">Напишите нам</h2>
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="name">
+                <li>
+                    <label for="write-name">Ваше имя:</label>
+                    <input type="text" name="name" id="write-name" placeholder="Иван Иванов">
+                </li>
+                <li>
+                    <label for="write-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="write-email" placeholder="example@email.com">
+                </li>
+            </ul>
+            <ul class="text">
+                <li>
+                    <label for="write-message">Текст письма:</label>
+                    <input type="text" name="message" id="write-message" placeholder="В свободной форме">
+                </li>
+            </ul>
+        <button class="button" type="submit">Отправить</button>
+        </form>
     <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>

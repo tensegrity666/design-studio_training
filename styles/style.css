@@ -938,9 +938,6 @@ input[type="radio"].visually-hidden {
   background-color:  #eee;
 }
 
-.write {
-  display: none;
-}
 
 .description {
   display: flex;
@@ -988,4 +985,37 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   
   color: #666;
+}
+
+.write {
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  
+  width: 960px;
+  height: 590px;
+  padding: 60px 100px 80px 100px;
+  
+  
+  bottom: 10px;
+  left: 300px;
+  
+  background-color: #fff;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 30px;
+  
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+.name {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
 }
