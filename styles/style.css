@@ -38,17 +38,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-basis: 1440px;
+  flex-basis: 1400px;
   min-height: 130px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   margin: 0 auto;
   margin-bottom: 80px;
-  padding: 0 140px;
+  padding: 0 150px;
   padding-top: 50px;
 
   font-size: 16px;
@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 800px;
+  flex-basis: 570px;
   justify-content: center;
 }
 
@@ -545,28 +545,85 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.social-button-vk {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-  background-image: url(../img/icons/vk-icon.png);
-}
-
-.social-button-fb {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-  background-image: url(../img/icons/fb-icon.png);
-}
-
+.social-button-vk,
+.social-button-fb,
 .social-button-insta {
-  display: inline-block;
+  position: relative;
+  display: block;
   width: 80px;
   height: 80px;
   margin-right: 20px;
-  background-image: url(../img/icons/insta-icon.png);
+  
+  background-image: radial-gradient(circle, #e1e1e1 90%, transparent 90% );
+  border-radius: 50%;
+}
+
+.social-button-vk:hover,
+.social-button-fb:hover,
+.social-button-insta:hover {
+  background-image: radial-gradient(circle, #e74246 90%, transparent 90% );
+}
+
+.social-button-vk:active,
+.social-button-fb:active,
+.social-button-insta:active {
+  background-image: radial-gradient(circle, #d7373b 90%, transparent 90% );
+}
+
+.social-button-vk::before {
+  content: "";
+  position: absolute;
+  
+  top: 33px;
+  left: 25px;
+  
+  width: 30px;
+  height: 30px;
+  
+  background-image: url(/img/icons/vk-icon.svg);
+  background-repeat: no-repeat;
+  
+  opacity: 1;
+}
+
+.social-button-fb::before {
+  content: "";
+  position: absolute;
+  
+  top: 28px;
+  left: 32px;
+  
+  width: 30px;
+  height: 30px;
+  
+  background-image: url(/img/icons/fb-icon.svg);
+  background-repeat: no-repeat;
+  
+  opacity: 1;
+}
+
+.social-button-insta::before {
+  content: "";
+  position: absolute;
+  
+  top: 30px;
+  left: 30px;
+  
+  width: 30px;
+  height: 30px;
+  
+  background-image: url(/img/icons/insta-icon.svg);
+  background-repeat: no-repeat;
+  
+  opacity: 1;
+}
+
+.social-button-vk:active::before,
+.social-button-fb:active::before,
+.social-button-insta:active::before {
+  opacity: 0.3;
+  
+  transition: all 0.2s;
 }
 
 .discount {
