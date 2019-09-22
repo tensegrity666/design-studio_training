@@ -575,13 +575,13 @@ input[type="radio"].visually-hidden {
   color: #666;
 }
 
-.contacts-wrapper li a {
+.phone {
   color: #666;
   text-decoration: none;
   transition: 0.4s;
 } 
 
-.contacts-wrapper li a:hover {
+.phone:hover {
   color: rgba(0, 0, 0, 1);
 }
 
