@@ -320,11 +320,37 @@ input[type="radio"].visually-hidden {
 .button-lime {
   color: #fff;
   background-color: #00ca74;
+  
+  transition: all 0.2s;
 }
 
 .button-yellow {
   color: #fff;
   background-color: #efc84a;
+  
+  transition: all 0.2s;
+}
+
+.button-lime:active, 
+.button-yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 2px 1px 0px rgba(50, 50, 50, 0.2);
+}
+
+.button-lime:active {
+  background-color: #00aa62;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+.button-lime:hover {
+  background-color: #00bc6c;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
 }
 
 .button-slider-about {
