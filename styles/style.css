@@ -584,10 +584,12 @@ input[type="radio"].visually-hidden {
 .main-footer {
   display: flex;
   min-width: 1440px;
-  min-height: 220px;
+  min-height: 140px;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  
+  margin-top: 40px;
 }
 
 .footer-social ul {
@@ -634,7 +636,7 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   
-  background-image: url(/img/icons/vk-icon.svg);
+  background-image: url(../img/icons/vk-icon.svg);
   background-repeat: no-repeat;
   
   opacity: 1;
@@ -650,7 +652,7 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   
-  background-image: url(/img/icons/fb-icon.svg);
+  background-image: url(../img/icons/fb-icon.svg);
   background-repeat: no-repeat;
   
   opacity: 1;
@@ -666,7 +668,7 @@ input[type="radio"].visually-hidden {
   width: 30px;
   height: 30px;
   
-  background-image: url(/img/icons/insta-icon.svg);
+  background-image: url(../img/icons/insta-icon.svg);
   background-repeat: no-repeat;
   
   opacity: 1;
@@ -736,7 +738,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-  margin: 0;
+  min-height: 180px;
   margin-bottom: 100px;
   
   font-family: "Roboto medium", sans-serif;
@@ -1089,13 +1091,13 @@ background-color: #dfdfdf;
   left: -35px;
   
   
-  background-image:url(/img/icons/checkbox-off.svg);
+  background-image:url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-input-checkbox:checked + .checkbox-indicator {
-  background-image: url(/img/icons/checkbox-on.svg);
+  background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
