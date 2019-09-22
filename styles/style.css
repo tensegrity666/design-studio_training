@@ -1209,10 +1209,10 @@ background-color: #dfdfdf;
   box-shadow: 0px 20px 25px 10px rgba(50, 50, 50, 0.7);
   
   opacity: 0;
-  transition: 0.5s;
 }
 
 .modal-show {
+  display: block;
   opacity: 1;
 }
 
