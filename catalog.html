@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="inner-page">
+<div class="js-blur">
       <header class="main-header inner-header">
         <a href="index.html">
           <img class="main-header-logo" src="img/nerds-logo.svg" alt="Логотип NЁRDS" width="160" height="65">
@@ -219,9 +220,11 @@
       <i>Скидка 10% для друзей из социальных сетей.</i>
     </div>
   </footer>
+</div>  
 
     <!-- модальное окно -->
-    <section class="write modal-sh7ow">
+    <div class="modal-overlay"></div>
+    <section class="write">
         <h2 class="form-title">Напишите нам</h2>
         <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
             <ul class="form-name">
@@ -244,6 +247,9 @@
         </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    
+    <script src="scripts/main.js"></script>
+    
 </body>
 
 </html>
