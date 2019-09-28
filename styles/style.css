@@ -202,12 +202,20 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
 }
 
-.slider .item-night {
+.item-expensive {
   display: none;
 }
 
-.slider .item-math {
+.item-night {
   display: none;
+}
+
+.item-math {
+  display: none;
+}
+
+.slideOn {
+  display: flex;
 }
 
 .slider-switcher ul {
