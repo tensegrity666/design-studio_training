@@ -635,7 +635,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-basis: 300px;
   margin: 0;
-  padding: 0 140px;
+  padding: 0;
+  padding-left: 140px;
+  padding-right: 100px;
 
   list-style: none;
 }
@@ -1244,7 +1246,7 @@ background-color: #dfdfdf;
   
   opacity: 0;
   
-  transition: 0.4s linear;
+  transition: 0.1s linear;
 }
 
 .modal-overlay {
@@ -1259,11 +1261,11 @@ background-color: #dfdfdf;
   
   opacity: 0;
   
-  transition: 0.4s linear;
+  transition: 0.2s linear;
 }
 
 .js-blur {
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .modal-blur {
