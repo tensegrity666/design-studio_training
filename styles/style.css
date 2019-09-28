@@ -64,6 +64,7 @@ input[type="radio"].visually-hidden {
   padding: 0 140px;
   padding-top: 65px;
 
+
   font-size: 16px;
   line-height: 30px;
   color: rgba(0, 0, 0, 1);
@@ -77,8 +78,10 @@ input[type="radio"].visually-hidden {
   flex-flow: row wrap;
   flex-basis: 800px;
   justify-content: center;
+
   align-content: center;
   align-items: center
+
 }
 
 .main-navigation-items {
@@ -136,7 +139,9 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   position: absolute;
+
   top: 7px;
+
   left: 35px;
   width: 15px;
   height: 15px;
@@ -599,6 +604,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-contacts {
+
   width: 220px;
   
   background-color: #fb565a;
@@ -629,6 +635,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   
   margin-top: 40px;
+
 }
 
 .footer-social ul {
@@ -637,6 +644,33 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0 140px;
 
+
+.cost-wrapper label {
+  font-size: 16px;
+  line-height: 42px;
+  padding-right: 10px;
+  
+  color: #283136;
+  
+  text-transform: uppercase;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  
+  font-weight: bold;
+  
+  text-transform: uppercase;
+}
+
+
+.filters fieldset:first-child legend {
+  padding-bottom: 40px;
+}
+
+.filter-option {
   list-style: none;
 }
 
@@ -985,10 +1019,12 @@ background-color: #dfdfdf;
   display: block;
   width: 260px;
   height: 30px;
+
   padding: 10px;
   text-align: center;
   vertical-align: middle;
   
+
   border: none;
   
   background-color:  #eee;
@@ -1075,7 +1111,7 @@ background-color: #dfdfdf;
   font-size: 18px;
   line-height: 30px;
   padding-bottom: 10px;
-  
+
   font-weight: bold;
   
   text-transform: uppercase;
@@ -1181,7 +1217,7 @@ background-color: #dfdfdf;
   display: flex;
   position: absolute;
   box-sizing: border-box;
-  
+
   bottom: 0px;
   left: 0;
   
