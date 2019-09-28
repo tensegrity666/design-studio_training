@@ -17,6 +17,13 @@ writeButton.addEventListener('click', function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
-  blur.classList.remove('modal-blur');
   overlay.classList.remove('modal-show');
+  blur.classList.remove('modal-blur');
+});
+
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-show');
+  overlay.classList.remove('modal-show');
+  blur.classList.remove('modal-blur');
 });
