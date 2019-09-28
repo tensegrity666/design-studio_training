@@ -784,6 +784,7 @@ input[type="radio"].visually-hidden {
   
   margin-bottom: 0;
   padding: 0 140px;
+  padding-top: 10px;
 }
 
 .inner-page .container {
