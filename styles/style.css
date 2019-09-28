@@ -1270,6 +1270,8 @@ background-color: #dfdfdf;
 .modal-show {
   visibility: visible;
   opacity: 1;
+  
+  z-index: 2;
 }
 
 .form-title {
