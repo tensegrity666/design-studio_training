@@ -32,7 +32,7 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
   
-  z-index: -1;
+  z-index: -5;
 }
 
 .main-header-logo {
@@ -49,17 +49,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-basis: 100%;
   min-height: 130px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 80px;
   padding: 0 140px;
   padding-top: 65px;
@@ -78,10 +73,6 @@ input[type="radio"].visually-hidden {
   flex-flow: row wrap;
   flex-basis: 800px;
   justify-content: center;
-
-  align-content: center;
-  align-items: center
-
 }
 
 .main-navigation-items {
@@ -160,7 +151,9 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   display: flex;
+  width: 100%;
   flex-flow: column wrap;
+  align-items: center;
   margin: 0;
 
   color: rgba(0, 0, 0, 1);
@@ -212,12 +205,20 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
 }
 
-.slider .item-night {
+.item-expensive {
   display: none;
 }
 
-.slider .item-math {
+.item-night {
   display: none;
+}
+
+.item-math {
+  display: none;
+}
+
+.slideOn {
+  display: flex;
 }
 
 .slider-switcher ul {
@@ -642,7 +643,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-basis: 300px;
   margin: 0;
-  padding: 0 140px;
+  padding: 0;
+  padding-left: 140px;
+  padding-right: 100px;
 
 
 .cost-wrapper label {
@@ -1279,8 +1282,8 @@ background-color: #dfdfdf;
   box-shadow: 0px 20px 25px 10px rgba(50, 50, 50, 0.7);
   
   opacity: 0;
-  
-  transition: 0.4s linear;
+
+  transition: 0.1s linear;
 }
 
 .modal-overlay {
@@ -1291,15 +1294,15 @@ background-color: #dfdfdf;
   left: 0;
   right: 0;
   
-  box-shadow: inset 50px 0 100px 350px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 50px -180px 700px 900px rgba(0, 0, 0, 0.5);
   
   opacity: 0;
   
-  transition: 0.4s linear;
+  transition: 0.2s linear;
 }
 
 .js-blur {
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 
 .modal-blur {
@@ -1309,6 +1312,8 @@ background-color: #dfdfdf;
 .modal-show {
   visibility: visible;
   opacity: 1;
+  
+  z-index: 2;
 }
 
 .form-title {
