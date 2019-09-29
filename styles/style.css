@@ -55,7 +55,7 @@ input[type="radio"].visually-hidden {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
   padding: 0 140px;
   padding-top: 65px;
 
@@ -152,6 +152,7 @@ input[type="radio"].visually-hidden {
   flex-flow: column wrap;
   align-items: center;
   margin: 0;
+  
 
   color: rgba(0, 0, 0, 1);
   background-color: #eee;
@@ -166,33 +167,40 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: flex;
   flex-flow: row nowrap;
+  
+  height: 430px;
   justify-content: space-between;
 }
 
 .item-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
-  flex-basis: 600px;
-  padding-right: 100px;
+  min-width: 410px;
+  padding-right: 5px;
+  padding-top: 25px;
 }
 
 .item-wrapper h3 {
   margin: 0;
   margin-top: 40px;
   margin-bottom: 20px;
+  
+  font-family: "Roboto medium", sans-serif;
   font-size: 55px;
   line-height: 65px;
   font-weight: normal;
+  text-transform: none;
 }
 
 .item-wrapper p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+  text-transform: none;
   color: #283136;
 }
 
@@ -273,7 +281,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   width: 300px;
   height: 146px;
-  background-image: url(../img/illustration-1.jpg);
+  background-image: url(../img//illustrations/illustration-1.jpg);
 }
 
 .service-item-apps::before {
@@ -283,7 +291,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   width: 300px;
   height: 146px;
-  background-image: url(../img/illustration-2.jpg);
+  background-image: url(../img//illustrations/illustration-2.jpg);
 }
 
 .service-item-presentations::before {
@@ -293,7 +301,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   width: 300px;
   height: 146px;
-  background-image: url(../img/illustration-3.jpg);
+  background-image: url(../img//illustrations/illustration-3.jpg);
 }
 
 .button {
@@ -417,7 +425,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
   
-  top: -3px;
+  top: -5px;
   left: -15px;
   width: 30px;
   height: 2px;
@@ -774,6 +782,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-slide {
+  position: relative;
+  
   width: 16px;
   height: 16px;
   margin-right: 20px;
@@ -783,13 +793,22 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
   
   cursor: pointer;
+  
+  outline: none;
 }
 
-.button-slide:active {
-  border: 2px solid #bbb;
-  border-radius: 50%;
+.button-slide:active::before,
+.button-slide:focus::before {
+  content: "";
+  position: absolute;
   
-  transition: 0.4s;
+  left: 2px;
+  top: 2px;;
+  width: 4px;
+  height: 4px;
+  
+  border: 2px solid #ccc;
+  border-radius: 50%;
 }
 
 /* inner-page*/
