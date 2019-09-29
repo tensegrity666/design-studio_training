@@ -163,7 +163,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-
 .slider-item {
   display: flex;
   flex-flow: row nowrap;
@@ -807,7 +806,7 @@ input[type="radio"].visually-hidden {
   width: 4px;
   height: 4px;
   
-  border: 2px solid #ccc;
+  border: 2px solid #eee;
   border-radius: 50%;
 }
 
