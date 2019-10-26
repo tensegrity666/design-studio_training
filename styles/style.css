@@ -13,6 +13,10 @@ body {
   background-color: #ffffff;
 }
 
+/* html * {
+  background-color: rgba(135, 44, 138, 0.1);
+} */
+
 .visually-hidden:not(focus):not(active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -32,7 +36,7 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  z-index: -5;
+  z-index: -99;
 }
 
 .main-header-logo {
@@ -49,12 +53,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  display: flex;
-  flex-basis: 100%;
   min-height: 130px;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
   margin-bottom: 85px;
   padding: 0 140px;
   padding-top: 65px;
@@ -65,6 +64,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #eee;
+}
+
+.header-wrapper{
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #eee;
+}
+
+.inner-header {
+  margin-bottom: 0;
 }
 
 .main-navigation {
@@ -821,7 +834,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-  min-height: 180px;
+  min-height: 100px;
   margin-bottom: 100px;
 
   font-family: "Roboto medium", sans-serif;
@@ -829,19 +842,13 @@ input[type="radio"].visually-hidden {
   line-height: 70px;
   color: rgba(0, 0, 0, 1);
 
-
   background-color: #eee;
 }
 
-.inner-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-end;
-
-  margin-bottom: 0;
-  padding: 0 140px;
-  padding-top: 10px;
+.page-title p {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 50px;
 }
 
 .inner-page .container {
@@ -1139,7 +1146,6 @@ input[type="radio"].visually-hidden {
   top: 23px;
   left: -35px;
 
-
   background: radial-gradient(circle, transparent 50%, #d6d6d6 10%);
   border-radius: 50%;
 }
@@ -1214,7 +1220,6 @@ input[type="radio"].visually-hidden {
   height: 230px;
   padding: 10px;
 
-
   flex-flow: column wrap;
   justify-content: flex-start;
 
@@ -1261,7 +1266,6 @@ input[type="radio"].visually-hidden {
   height: 450px;
   padding: 60px 100px 80px 100px;
   margin-left: -480px;
-
 
   top: 15%;
   left: 50%;
