@@ -1704,6 +1704,15 @@ input[type="radio"].visually-hidden {
   color: #b4b9bb;
 }
 
+.form-text label {
+  padding-bottom: 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
 .form-text textarea:hover {
   width: 740px;
   height: 80px;
