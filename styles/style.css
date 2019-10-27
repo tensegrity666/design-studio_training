@@ -653,6 +653,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-social ul {
