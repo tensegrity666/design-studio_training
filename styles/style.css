@@ -1210,10 +1210,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 60px;
+  margin-left: 40px;
   padding: 0;
   list-style: none;
 }
