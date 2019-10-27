@@ -1210,6 +1210,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 60px;
